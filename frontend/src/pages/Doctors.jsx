@@ -15,7 +15,7 @@ const Doctors = () => {
     if (speciality) {
       setFilterDoc(doctors.filter(doc => doc.speciality === speciality));
     } else {
-      setFilterDoc(doctors);
+      setFilterDoc(doctors);//all doctors list
     }
   };
 

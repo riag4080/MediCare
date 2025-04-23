@@ -6,3 +6,8 @@
 ::-webkit-scrollbar{
   @apply hidden
 }
+
+html,
+:host {
+    text-size-adjust: 100%;
+}

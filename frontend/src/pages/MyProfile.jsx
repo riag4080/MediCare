@@ -5,11 +5,11 @@ const MyProfile = () => {
   const [userData, setUserData]=useState({
     name: "John Doe",
     image:assets.profile_pic,
-    email:'richardjameswap@gmail.com',
-    phone:'+1 123 456 7890',
+    email:'johnjameswap@gmail.com',
+    phone:'+91 8238994255',
     address:{
-      line1: "57th Cross, Richmond ",
-      line2: "Circle, Church Road, London"
+      line1: "Mnnit campus, Teliyarganj ",
+      line2: "Prayagraj, Uttar Pradesh"
     },
     gender: 'Male',
     dob: '2000-01-20'
@@ -79,7 +79,7 @@ const MyProfile = () => {
         <div className='mt-10'>
 
             {isEdit
-                ? <button onClick={updateUserProfileData} className='border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all'>Save information</button>
+                ? <button onClick={() => setIsEdit(false)} className='border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all'>Save information</button>
                 : <button onClick={() => setIsEdit(true)} className='border border-primary px-8 py-2 rounded-full hover:bg-primary hover:text-white transition-all'>Edit</button>
             }
 

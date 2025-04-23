@@ -7,10 +7,12 @@ export const AdminContext = createContext()
 
 const AdminContextProvider = (props) => {
 
+    const [aToken, setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '')
+
     const backendUrl = import.meta.env.VITE_BACKEND_URL
 
-    const [aToken, setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '')
     const [doctors, setDoctors] = useState([])
+
 
     // Getting all Doctors data from Database using API
     const getAllDoctors = async () => {
@@ -46,11 +48,12 @@ const AdminContextProvider = (props) => {
             console.log(error)
             toast.error(error.message)
         }
-    }
 
+    }
 
     const value = {
         aToken, setAToken,
+        backendUrl,
         doctors,
         getAllDoctors,
         changeAvailability,

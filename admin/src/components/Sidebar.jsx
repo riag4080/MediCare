@@ -5,6 +5,7 @@ import { DoctorContext } from '../context/DoctorContext'
 import { AdminContext } from '../context/AdminContext'
 
 const Sidebar = () => {
+  
   const { aToken } = useContext(AdminContext)
 
   return (

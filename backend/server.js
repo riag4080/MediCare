@@ -14,6 +14,7 @@ connectDB()
 connectCloudinary()
 
 // middlewares
+//it will allow frontend to connect with the backend
 app.use(express.json())
 app.use(cors())
 
@@ -21,6 +22,8 @@ app.use("/api/user", userRouter)
 
 app.use("/api/admin", adminRouter)
 app.use('/api/doctor', doctorRouter)
+
+//api endpoints
 
 app.get("/", (req, res) => {
     res.send("API Working nicely")

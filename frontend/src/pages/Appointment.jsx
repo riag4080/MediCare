@@ -102,7 +102,7 @@ return docInfo && (
                         <p className='flex items-center gap-1 text-sm font-medium text-[#262626] mt-3'>About <img className='w-3' src={assets.info_icon} alt="" /></p>
                         <p className='text-sm text-gray-600 max-w-[700px] mt-1'>{docInfo.about}</p>
                     </div>
-                    <p className='text-gray-600 font-medium mt-4'>Appointment fee: <span className='text-gray-800'>{currencySymbol}{docInfo.fees}</span> </p>
+                    <p className='text-gray-500 font-medium mt-4'>Appointment fee: <span className='text-gray-700'>{currencySymbol}{docInfo.fees}</span> </p>
 
 </div>
   </div>
@@ -128,7 +128,7 @@ return docInfo && (
 </div>
 
             {/* Listing Releated Doctors */}
-            <RelatedDoctors speciality={docInfo.speciality} docId={docId} />
+            <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
   </div>
 )
 }
