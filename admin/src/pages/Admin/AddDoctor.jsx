@@ -138,7 +138,7 @@ const AddDoctor = () => {
                             <label htmlFor="speciality">Speciality</label>
                             <select id="speciality" onChange={e => setSpeciality(e.target.value)} value={speciality} className='border rounded px-2 py-2' aria-label="Doctor's speciality">
                                 <option value="General physician">General physician</option>
-                                <option value="Gynecologist">Gynecologist</option>
+                                <option value="Gynaecologist">Gynecologist</option>
                                 <option value="Dermatologist">Dermatologist</option>
                                 <option value="Pediatricians">Pediatricians</option>
                                 <option value="Neurologist">Neurologist</option>
