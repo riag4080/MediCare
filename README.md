@@ -23,14 +23,9 @@
         status).
 - Admin Login:
       - Admins can create and manage doctor profiles.
-  
-      - Dashboard with analytics: total doctors, total appointments, total 
-        patients, and recent bookings.
-  
-      - Add new doctors (image, specialty, degree, experience, address, 
-        fees, etc.).
-  
-      - View and manage all appointments (cancel or mark as completed).
+      - Dashboard with analytics: total doctors, toatl appointments, total patients, and recent bookings.
+      - add new doctors (image, speciality, degree, experience, address, fees, etc.).
+      - View and amnage all appointments (cancel or amrk as completed).
 # Home Page
   - Features a user-friendly layout where users can:
       - Search for doctors based on specialties.
