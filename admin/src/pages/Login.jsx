@@ -1,34 +1,49 @@
-import React, { useContext } from 'react'
-import  { useState } from 'react';
+import React, { useContext, useState } from 'react'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-import{assets} from '../assets/assets'
+import {assets} from '../assets/assets'
 import { AdminContext } from '../context/AdminContext';
+import { DoctorContext } from '../context/DoctorContext';
+
 
 const Login = () => {
 
     const [state, setState] = useState('Admin')
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const {setAToken, backendUrl}=useContext(AdminContext)
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const {setAToken, backendUrl} = useContext(AdminContext)
+    const {setDToken} = useContext(DoctorContext)
     
   const onSubmitHandler = async (event) => {
-    event.preventDefault();
+    
+    event.preventDefault();//so that when we submit form page not reloads
     try{
         if (state === 'Admin') {
             const { data } = await axios.post(backendUrl + '/api/admin/login', { email, password })
             if (data.success) {
-                setAToken(data.token)
                 localStorage.setItem('aToken', data.token)
-              } else {
+                setAToken(data.token)
+            } else {
                 toast.error(data.message)
-              }
             }
-            }
+        } else {
+
+          const {data} = await axios.post(backendUrl + '/api/doctor/login', {email, password})
+          if (data.success) {
+                localStorage.setItem('dToken', data.token)
+                setDToken(data.token)
+                console.log(data.token)
+          } else {
+              toast.error(data.message)
+          }
+
+        }
+    }
     catch(error){
         toast.error(data.message)
-
     }
     }
   return (

@@ -64,7 +64,7 @@ export const specialityData = [
         image: General_physician
     },
     {
-        speciality: 'Gynecologist',
+        speciality: 'Gynaecologist',
         image: Gynecologist
     },
     {
@@ -149,7 +149,7 @@ export const doctors = [
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'Dr. Jennifer has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
@@ -258,7 +258,7 @@ export const doctors = [
         _id: 'doc13',
         name: 'Dr. Chloe Evans',
         image: doc13,
-        speciality: 'General physician',
+        speciality: 'Gastroenterologist',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -272,7 +272,7 @@ export const doctors = [
         _id: 'doc14',
         name: 'Dr. Ryan Martinez',
         image: doc14,
-        speciality: 'Gynecologist',
+        speciality: 'Gastroenterologist',
         degree: 'MBBS',
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -286,7 +286,7 @@ export const doctors = [
         _id: 'doc15',
         name: 'Dr. Amelia Hill',
         image: doc15,
-        speciality: 'Dermatologist',
+        speciality: 'General physician',
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
